@@ -12,7 +12,7 @@ def main():
     df = np.loadtxt(os.path.join(input_dir, 'data.data'))
     df = pd.DataFrame(df, columns=['column 1', 'column 2', 'column 3'])
 
-    df['result'] = df['column 1']
+    df['result'] = df.sum(axis=1)
 
     np.savetxt(os.path.join(output_dir, 'data.predict'), np.array(df['result']), fmt='%.3f')
     return 0
