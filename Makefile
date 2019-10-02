@@ -18,4 +18,4 @@ test:
 
 pack:
 	cd out && \
-	zip submission.zip data.solution
+	zip submission.zip data.predict
