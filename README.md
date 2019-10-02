@@ -7,3 +7,7 @@
 ### Run model
 
 ```make test```
+
+### Pack results before submission
+
+```make pack```
