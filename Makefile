@@ -10,7 +10,12 @@ data:
 	unzip d.zip
 
 
+
 test:
 	mkdir -p out && \
 	python solution.py data out
 
+
+pack:
+	cd out && \
+	zip submission.zip data.solution
