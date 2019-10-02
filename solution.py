@@ -14,7 +14,7 @@ def main():
 
     df['result'] = df['column 1']
 
-    np.savetxt(os.path.join(output_dir, 'data.solution'), np.array(df['result']), fmt='%.3f')
+    np.savetxt(os.path.join(output_dir, 'data.predict'), np.array(df['result']), fmt='%.3f')
     return 0
 
 if __name__ == "__main__":
